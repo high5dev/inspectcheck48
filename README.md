@@ -1,1 +1,2 @@
-"# inspectcheck48" 
+To start
+npm run android
