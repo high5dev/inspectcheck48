@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "Inspectcheck",
+    "description": "Inspect Check - Mobile Inspection App",
+    "slug": "playbyplay_smithos_net",
+    "version": "3.0.0",
+    "runtimeVersion": "3.0.0",
+    "privacy": "unlisted",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "net.smithos.inspectcheck",
+      "buildNumber": "3.0.2",
+      "icon": "./assets/images/icon.png",
+      "supportsTablet": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "sentry",
+            "project": "playbyplay-mobile",
+            "authToken": "9be7c25a00bf423db09b22d28908bdd95cd7a2db35434a58aa399d696f6f1b78",
+            "url": "https://sentry.hostedapp.cloud/"
+          }
+        }
+      ]
+    },
+    "plugins": [
+      "sentry-expo"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "557b6828-32c4-45de-ab55-368f1d1c5d9e"
+      }
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/557b6828-32c4-45de-ab55-368f1d1c5d9e"
+    }
+  }
+}
